@@ -18,6 +18,10 @@ declare -a PHP_VARIATIONS=("cli" "apache" "fpm" "cli-alpine" "fpm-alpine" "alpin
 
 run "latest"
 
+for PHP_VARIATION in "${PHP_VARIATIONS[@]}"; do
+  run "${PHP_VARIATION}"
+done
+
 for PHP_VERSION in "${PHP_VERSIONS[@]}"; do
   run ${PHP_VERSION}
 
