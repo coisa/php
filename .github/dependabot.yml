@@ -8,3 +8,6 @@ updates:
       docker-images:
         patterns:
           - "*"
+    labels:
+      - dependencies
+      - docker
